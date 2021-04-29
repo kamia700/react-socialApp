@@ -1,6 +1,8 @@
 import React from 'react';
 import s from'./MyPosts.module.css';
 import Post from'./Post/Post';
+import {addPostActionCreator, updateNewPostActionCreator} from '../../../redux/state';
+
 
 // let PostsData = [
 //   {id: 1, message: 'Hi, how are you?', likes: 20},
@@ -17,7 +19,7 @@ const MyPosts = (props) => {
   // добавляет новый пост при нажатии на кнопку отправить
   let addPost = () => {
     // props.addPost();
-    props.dispatch({ type: 'ADD-POST'});
+    props.dispatch(addPostActionCreator());
   }
 
 // отслеживает изменение поля для ввода сообщения 
@@ -25,7 +27,8 @@ const MyPosts = (props) => {
     let text = newPostElement.current.value;
     // вызываем функцию из state для записи новых данных в textarea
     // props.updateNewPostText(text);
-    props.dispatch({ type: 'UPDATE-NEW-POST-TEXT', newText: text})
+    // props.dispatch({ type: 'UPDATE-NEW-POST-TEXT', newText: text })
+    props.dispatch(updateNewPostActionCreator(text))
   }
 
   return (

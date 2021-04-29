@@ -5,6 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 // import { renderEntireTree } from './render'
 import store from './redux/state'
+import { BrowserRouter } from 'react-router-dom';
 
 // renderEntireTree(state);
 
@@ -15,14 +16,15 @@ import store from './redux/state'
 
  // оборачиваем render в функцию renderEntireTree для того, чтобы перерисовывать дерево при изменении в state
 let rerenderEntireTree = (state) => {
-  ReactDOM.render(<App state={ state } 
+  ReactDOM.render(
     // добавляем bind чтобы связать метод addPost с объектом store, 
     // чтобы контекст вызова(this) в myPosts не изменился на props.
     // Это нужно если мы не вызываем объект, а передаем его в глубину
     // В результате this будет всегда равно store и не переопределиться
-                      dispatch={ store.dispatch.bind(store) } 
-                      // updateNewPostText={ store.updateNewPostText.bind(store) } 
-                      />, document.getElementById('root'));
+    <BrowserRouter>
+      <App state={state} dispatch={store.dispatch.bind(store)} store={store}/>
+     {/* // updateNewPostText={ store.updateNewPostText.bind(store) }  */}                
+    </BrowserRouter>, document.getElementById('root')); 
 }
 
 rerenderEntireTree(store.getState());

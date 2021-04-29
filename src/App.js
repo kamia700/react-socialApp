@@ -8,14 +8,14 @@ import Grammar from './components/Grammar/Grammar'
 import Dictionary from './components/Dictionary/Dictionary'
 
 import { Route } from 'react-router';
-import { BrowserRouter } from 'react-router-dom';
+
 
 // import Footer from './components/Footer';
 
 const App = (props) => {
   // debugger;
   return (
-    <BrowserRouter>
+    // <BrowserRouter>
       <div className='app-wrapper'>
         <Header />
         <Navbar data={ props.state.sideBar } />
@@ -34,13 +34,13 @@ const App = (props) => {
                                                         dispatch={ props.dispatch} 
                                                         // updateNewPostText={ props.updateNewPostText }
                                                         />} />
-          <Route path='/dialogs' render={ () => <Dialogs data={ props.state.dialogsPage } />} />
+          <Route path='/dialogs' render={ () => <Dialogs store={ props.store } />} />
 
           <Route path='/grammar' render={ () => <Grammar />} />
           <Route path='/dictionary' render={ () => <Dictionary />} />
         </div>
       </div>
-    </BrowserRouter>
+    // </BrowserRouter>
     );
 }
 
