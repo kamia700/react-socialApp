@@ -1,0 +1,69 @@
+.nav {
+  grid-area: n;
+  background-color: #9966CC;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: white;
+
+  height: 100vh;
+}
+
+/* .item {
+  color: white;
+} */
+
+.item a {
+  display: block;
+
+  padding-bottom: 20px;
+  padding-left: 15%;
+  padding-top: 10px;
+}
+
+.item:hover,
+.item:focus {
+  color: #605f64;
+  font-weight: 700;
+}
+
+.item a.activeLink {
+  color: #605f64;
+  font-weight: 700;
+  background-color: #f0edf6;
+  box-shadow:   0 1px rgba(255,255,255,.2) inset,
+   0 3px 5px rgba(0,1,6,.5) inset,
+   0 0 1px 1px rgba(0,1,6,.2) inset;
+}
+
+.wrap {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  padding-top: 50px;
+  /* height: 100%; */
+  
+}
+
+.menu {
+  margin-bottom: 15px;
+}
+
+
+.friends {
+  padding: 20px;
+}
+
+
+.friendsList {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: 15px 20px; */
+  /* padding: 20px; */
+}
+
+.friendsList h2 {
+  margin: 10px 0;
+}
+
+
+

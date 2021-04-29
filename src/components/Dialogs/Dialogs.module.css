@@ -1,0 +1,66 @@
+.dialogs {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+
+  height: 100%;
+  color: #605f64;
+  border: 2px solid rgba(0,1,6,.2);
+  border-radius: 5px;
+}
+
+.dialogsItems {
+  border-right: 2px solid rgba(0, 1, 6, 0.2);
+}
+
+.dialog {
+  position: relative;
+  /* padding: 25px 10px;
+  padding-left: 70px; */
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+
+  border-bottom: 1px solid rgba(0,1,6,.2);
+}
+
+.dialog:hover,
+.dialog:focus {
+  background-color: #e9e3f7;
+}
+
+.dialog img {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.dialogsItems a {
+  display: block;
+  padding: 25px 10px;
+  padding-left: 70px;
+}
+
+.dialogsItems a.active {
+  color: #605f64;
+  font-weight: 700;
+  background-color: #e9e3f7;
+  /* background-color: #f0edf6; */
+  /* box-shadow:   0 1px rgba(255,255,255,.2) inset,
+   0 3px 5px rgba(0,1,6,.5) inset,
+   0 0 1px 1px rgba(0,1,6,.2) inset; */   
+}
+
+.message {
+  padding: 20px 5%;
+}
+
+.newMessage {
+  margin-top: 50px;
+}

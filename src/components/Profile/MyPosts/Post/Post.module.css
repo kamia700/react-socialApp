@@ -1,0 +1,12 @@
+.item {
+  padding: 30px 0;
+
+  outline: 1px solid salmon;
+}
+
+.item img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
