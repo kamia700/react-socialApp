@@ -3,12 +3,6 @@ import s from'./MyPosts.module.css';
 import Post from'./Post/Post';
 import {addPostActionCreator, updateNewPostActionCreator} from '../../../redux/state';
 
-
-// let PostsData = [
-//   {id: 1, message: 'Hi, how are you?', likes: 20},
-//   {id: 2, message: 'My first post', likes: 15}
-// ]
-
 const MyPosts = (props) => {
   let postElements = props.posts
     .map(el => <Post message={el.message} likes={el.likes} />
@@ -16,18 +10,12 @@ const MyPosts = (props) => {
 
   let newPostElement = React.createRef();
 
-  // добавляет новый пост при нажатии на кнопку отправить
   let addPost = () => {
-    // props.addPost();
     props.dispatch(addPostActionCreator());
   }
 
-// отслеживает изменение поля для ввода сообщения 
   let onPostChange = () => {
     let text = newPostElement.current.value;
-    // вызываем функцию из state для записи новых данных в textarea
-    // props.updateNewPostText(text);
-    // props.dispatch({ type: 'UPDATE-NEW-POST-TEXT', newText: text })
     props.dispatch(updateNewPostActionCreator(text))
   }
 
@@ -43,8 +31,6 @@ const MyPosts = (props) => {
       </div>
     </div>
     <div className={s.posts}>
-      {/* <Post message={PostsData[0].message} likes={PostsData[0].likes} />
-      <Post message={PostsData[1].message} likes={PostsData[1].likes} /> */}
       { postElements }
     </div>
   </div>

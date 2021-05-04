@@ -31,14 +31,6 @@ let store = {
         {id: 6, message: 'nihil quis quia, fugiat pariatur distinctio'}
       ],
       newMessageText: ''
-  
-      // avatars: [
-      //   {id: 1, avatar: 'https://image.pngaaa.com/371/1423371-middle.png'},
-      //   {id: 2, avatar: 'https://e7.pngegg.com/pngimages/701/23/png-clipart-black-and-brown-gorilla-illustration-discord-avatar-twitch-youtube-profile-mammal-face-thumbnail.png'},
-      //   {id: 3, avatar: 'https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/123065442/original/76aa155c9e8edd9d401c3aea4bea877aa34ecb0d/draw-avatar-for-your-discord-or-twitter-etc-profile-pic.png'},
-      //   {id: 4, avatar: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7959eaa6-5390-47f6-8d5f-86afc4577958/dcfie4l-6318f442-944d-45d8-9302-8b18ea40670e.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNzk1OWVhYTYtNTM5MC00N2Y2LThkNWYtODZhZmM0NTc3OTU4XC9kY2ZpZTRsLTYzMThmNDQyLTk0NGQtNDVkOC05MzAyLThiMThlYTQwNjcwZS5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.-R_pzvNaz4HHcizHlL2z6OltTQfLe89UUAfErvTxjFM'},
-      //   {id: 5, avatar: 'https://i.pinimg.com/originals/d6/53/78/d6537837a5f328ce4ba497ce869cd307.png'}
-      // ]
     },
   
     sideBar: {
@@ -63,29 +55,8 @@ let store = {
     this._callSubscriber = observer;
   },
 
-  // функция добавления нового поста в массив
-  // экспорт без дефолта импортируется немного иначе, смотри в index
-  // addPost () {
-  //   let newPost = {
-  //     id: 5,
-  //     message: this._state.profilePage.newPostText,
-  //     likes: 0
-  //   };
   
-  //   this._state.profilePage.posts.push(newPost);
-  //   this._state.profilePage.newPostText = '';
-  //   this._callSubscriber(this._state);
-  // },
-  
-  // // Изменят значение newPostText в зависимости от введенных данных 
-  // updateNewPostText (newText) {
-  //   this._state.profilePage.newPostText = newText;
-  //   this._callSubscriber(this._state);
-  // },
-
-
-
-  dispatch (action) { //объект, который описывает действие которое нужно совершить, type:'ADD-POST'
+  dispatch (action) {
     if (action.type === ADD_POST) {
       let newPost = {
         id: 5,

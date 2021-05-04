@@ -9,30 +9,14 @@ import Dictionary from './components/Dictionary/Dictionary'
 
 import { Route } from 'react-router';
 
-
-// import Footer from './components/Footer';
-
 const App = (props) => {
-  // debugger;
   return (
-    // <BrowserRouter>
       <div className='app-wrapper'>
         <Header />
         <Navbar data={ props.state.sideBar } />
         <div className='app-content'>
-          {/* <Route path='/profile' component={Profile} />
-          <Route path='/dialogs' component={Dialogs} />
-          <Route path='/grammar' component={Grammar} />
-          <Route path='/dictionary' component={Dictionary} /> */}
-
-          {/* <Route path='/profile' render={ () => <Profile  posts={ props.state.profilePage.posts }/>} />
-          <Route path='/dialogs' render={ () => <Dialogs dialogsData={ props.state.dialogsPage.dialogsData } 
-                                                          messageData={ props.state.dialogsPage.messageData } />} /> 
-                                                          
-          или так: */}
           <Route path='/profile' render={ () => <Profile data={ props.state.profilePage } 
                                                         dispatch={ props.dispatch} 
-                                                        // updateNewPostText={ props.updateNewPostText }
                                                         />} />
           <Route path='/dialogs' render={ () => <Dialogs store={ props.store } />} />
 
@@ -40,7 +24,6 @@ const App = (props) => {
           <Route path='/dictionary' render={ () => <Dictionary />} />
         </div>
       </div>
-    // </BrowserRouter>
     );
 }
 

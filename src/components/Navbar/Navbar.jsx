@@ -6,7 +6,6 @@ import FriendsItem from './FriendsItem/FriendsItem';
 
 
 const Navbar = (props) => {
-    // debugger;
     let friendsElements = props.data.friends
     .map(el => <FriendsItem name={el.name} id={el.id} avatar={el.avatar} />
     );
@@ -23,15 +22,7 @@ const Navbar = (props) => {
                 <div className={s.item}>
                     <NavLink to='/grammar' activeClassName={s.activeLink}>Grammar</NavLink>
                 </div>
-                {/* <div className={s.item}>
-                    <a href='/links'>Links</a>
-                </div>
-                <div className={s.item}>
-                    <a href='/videos'>Videos</a>
-                </div>
-                <div className={s.item}>
-                    <a href='/humor'>Humor</a>
-                </div> */}
+               
                 <div className={s.item}>
                     <NavLink to='/dictionary' activeClassName={s.activeLink}>Dictionary</NavLink>
                 </div>
