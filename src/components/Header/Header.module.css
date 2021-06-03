@@ -6,9 +6,11 @@
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .header img {
-  width: 20px;
+  width: 55px;
+  margin: 10px;
+  padding-left: 30px;
 }

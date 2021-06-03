@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg1" viewBox="0 0 482.45 482.45" version="1.0" y="0" x="0">
+  <path id="path908" d="m281.53 275.78c-482.08-324.08 521.85-75.86-57.32-31.21-363.02 27.99-220.66 339.14-17.53 36.96 324.07-482.08 75.85 521.85 31.2-57.32-27.99-363.02-339.13-220.66-36.96-17.53 482.08 324.07-521.84 75.85 57.32 31.2 363.03-27.99 220.67-339.13 17.54-36.96-324.08 482.08-75.86-521.84-31.21 57.32 27.99 363.03 339.14 220.67 36.96 17.54z" fill-rule="evenodd" fill-opacity=".75" stroke="#000" stroke-width="1pt" fill="#ff0"/>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>sapin</dc:title>
+        <dc:date>2008-02-08T19:22:44</dc:date>
+        <dc:description>abstract, abstract, clip art, clipart, evergreen, evergreen, geometric, geometric, image, media, pinwheel, pinwheel, plant, plant, png, public domain, shape, shape, svg, tree, tree, </dc:description>
+        <dc:source>http://openclipart.org/detail/13170/sapin-by-anonymous</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Anonymous</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>abstract</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>evergreen</rdf:li>
+            <rdf:li>geometric</rdf:li>
+            <rdf:li>image</rdf:li>
+            <rdf:li>media</rdf:li>
+            <rdf:li>pinwheel</rdf:li>
+            <rdf:li>plant</rdf:li>
+            <rdf:li>png</rdf:li>
+            <rdf:li>public domain</rdf:li>
+            <rdf:li>shape</rdf:li>
+            <rdf:li>svg</rdf:li>
+            <rdf:li>tree</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

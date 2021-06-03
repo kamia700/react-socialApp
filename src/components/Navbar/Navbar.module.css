@@ -32,16 +32,18 @@
 }
 
 .wrap {
-  padding-top: 50px;
+  padding-top: 50px;  
 }
 
 .menu {
   margin-bottom: 15px;
 }
 
+
 .friends {
   padding: 20px;
 }
+
 
 .friendsList {
   display: flex;

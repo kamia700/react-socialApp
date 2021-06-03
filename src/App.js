@@ -2,8 +2,10 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
-import Profile from './components/Profile/Profile'
-import Dialogs from './components/Dialogs/Dialogs'
+import Profile from './components/Profile/Profile';
+import UsersContainer from './components/Users/UsersContainer'
+import NewDialogsContainer from './components/Dialogs/DialogsContainer'
+
 import Grammar from './components/Grammar/Grammar'
 import Dictionary from './components/Dictionary/Dictionary'
 
@@ -13,12 +15,11 @@ const App = (props) => {
   return (
       <div className='app-wrapper'>
         <Header />
-        <Navbar data={ props.state.sideBar } />
+        <Navbar />
         <div className='app-content'>
-          <Route path='/profile' render={ () => <Profile data={ props.state.profilePage } 
-                                                        dispatch={ props.dispatch} 
-                                                        />} />
-          <Route path='/dialogs' render={ () => <Dialogs store={ props.store } />} />
+          <Route path='/profile' render={ () => <Profile />} />
+          <Route path='/dialogs' render={ () => <NewDialogsContainer />} />
+          <Route path='/users' render={ () => <UsersContainer />} />
 
           <Route path='/grammar' render={ () => <Grammar />} />
           <Route path='/dictionary' render={ () => <Dictionary />} />
