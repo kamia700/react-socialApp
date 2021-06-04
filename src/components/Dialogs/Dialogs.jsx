@@ -13,7 +13,6 @@ const Dialogs = (props) => {
     let messageElements = state.messageData
     .map(el => <MessagesItem message={el.message} key={el.id} />
     );
-
     let newMessageBody = state.newMessageText;
 
     let omNewMessageChange = (e) => {
@@ -32,6 +31,7 @@ const Dialogs = (props) => {
         </div>
         <div className={s.messages}>
             { messageElements }
+
             <div className={s.newMessage}>
                 <div>
                     <textarea onChange={ omNewMessageChange } value={ newMessageBody } placeholder='Enter your message' name="" id="" cols="50" rows="2"></textarea>

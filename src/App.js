@@ -5,11 +5,10 @@ import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
 import UsersContainer from './components/Users/UsersContainer'
 import NewDialogsContainer from './components/Dialogs/DialogsContainer'
-
 import Grammar from './components/Grammar/Grammar'
 import Dictionary from './components/Dictionary/Dictionary'
-
 import { Route } from 'react-router';
+
 
 const App = (props) => {
   return (

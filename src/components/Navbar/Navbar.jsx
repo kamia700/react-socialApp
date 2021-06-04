@@ -3,6 +3,7 @@ import s from'./Navbar.module.css';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
+
     return (
     <nav className={s.nav}>
         <div className={s.wrap}>
@@ -14,7 +15,7 @@ const Navbar = () => {
                     <NavLink to='/dialogs' activeClassName={s.activeLink}>Messages</NavLink>
                 </div>
                 <div className={s.item}>
-                    <NavLink to='/grammar' activeClassName={s.activeLink}>Grammar</NavLink>
+                    <NavLink to='/users' activeClassName={s.activeLink}>Users</NavLink>
                 </div>
                 <div className={s.item}>
                     <NavLink to='/dictionary' activeClassName={s.activeLink}>Dictionary</NavLink>
