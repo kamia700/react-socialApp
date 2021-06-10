@@ -13,6 +13,7 @@ const Dialogs = (props) => {
     let messageElements = state.messageData
     .map(el => <MessagesItem message={el.message} key={el.id} />
     );
+
     let newMessageBody = state.newMessageText;
 
     let omNewMessageChange = (e) => {

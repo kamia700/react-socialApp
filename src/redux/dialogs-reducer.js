@@ -22,6 +22,7 @@ let initialState = {
 }
 
 const dealogsReducer = (state=initialState, action) => {
+
   switch (action.type) {
     case UPDATE_NEW_MESSAGE_TEXT:
       return {

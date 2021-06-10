@@ -23,6 +23,7 @@ const profileReducer = (state=initialState, action) => {
         posts: [...state.posts, newPost],
         newPostText: ''
       };
+     
     }
       
     case UPDATE_NEW_POST_TEXT: {
@@ -37,7 +38,6 @@ const profileReducer = (state=initialState, action) => {
 }
 
 export let addPostActionCreator = () => ( { type: ADD_POST } ) 
-
 export let updateNewPostActionCreator = (text) => ( { type: UPDATE_NEW_POST_TEXT, newText: text } )
 
 export default profileReducer;
